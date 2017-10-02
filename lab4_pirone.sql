@@ -95,4 +95,4 @@ is added to the database and has the same discount price as someone from Duluth 
 it will not output properly. */	              
 AND city != 'Duluth' AND city != 'London';
 	     
---------------------------------------------
+---------------------------------------------

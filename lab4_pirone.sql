@@ -55,10 +55,13 @@ ORDER BY cid ASC;
 ------------ Query #5 ----------------------
 
 SELECT DISTINCT pid
-FROM Orders
-WHERE pid NOT IN (SELECT cid
+FROM Products
+WHERE pid NOT IN (SELECT pid
                   FROM Orders
-                  WHERE aid IN ('a02', 'a03')
+                  WHERE aid IN (SELECT aid
+			        FROM Orders
+			        WHERE aid = 'a02' or aid = 'a03'
+			       )
                  )
 ORDER BY pid DESC; 
 	  

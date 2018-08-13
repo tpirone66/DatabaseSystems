@@ -858,7 +858,7 @@ INSERT INTO Stats(char_id, pitch, bat, field, run) VALUES
 ---Updated results for Stats table after the deletion of Character 75.---
 SELECT * FROM Stats;
 
----Updated results for SCharacters table after the deletion of Character 75.---
+---Updated results for Characters table after the deletion of Character 75.---
 SELECT * FROM Characters;
 -------------------------------------------------------------------------------------
 
